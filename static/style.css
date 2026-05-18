@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cause&display=swap');
+
+.cause-font {
+  font-family: "Cause", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-family: "Cause", cursive;
+    background-color: rgb(225, 240, 184);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+    
+.convert-box {
+    background: rgb(247, 255, 226);
+    padding: 30px;
+    border-radius: 50px;
+    border: 5px dashed rgb(142, 169, 102);
+    box-shadow: 0 0 30px 10px rgba(143, 213, 2, 0.378);
+    width: 320px;
+}
+
+.convert-box h2 {
+    color: rgb(100, 132, 52);
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+label { 
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+    color: rgb(142, 169, 102);
+}
+
+select, input, button {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgb(165, 212, 127);
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: rgb(105, 154, 0);
+}
+
+button {
+    font-family: "Cause", cursive;
+    background-color: #dcf8ac;
+    color: rgb(52, 114, 0);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover { 
+    background-color: rgb(52, 114, 0); 
+    color: #dcf8ac;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
