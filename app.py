@@ -73,6 +73,70 @@ def convert():
         elif unit1 == unit2: 
             answer = num1
 
+    elif category == "ds":
+        if unit1 == "bit" and unit2 == "Byte": 
+            answer = num1 / 8
+        elif unit1 == "bit" and unit2 == "KB": 
+            answer = num1 / 800 
+        elif unit1 == "bit" and unit2 == "MB":
+            answer = num1 / 8000000 
+        elif unit1 == "bit" and unit2 == "GB": 
+            answer = num1 * 8000000000 
+        elif unit1 == "bit" and unit2 == "TB": 
+            answer = num1 * 8000000000000 
+        elif unit1 == "Byte" and unit2 == "bit": 
+            answer = num1 * 8 
+        elif unit1 == "Byte" and unit2 == "KB": 
+            answer = num1 / 1000
+        elif unit1 == "Byte" and unit2 == "MB": 
+            answer = num1 / 1000000
+        elif unit1 == "Byte" and unit2 == "GB": 
+            answer = num1 / 1000000000
+        elif unit1 == "Byte" and unit2 == "TB": 
+            answer = num1 / 1000000000000
+        elif unit1 == "KB" and unit2 == "bit": 
+            answer = num1 * 8000
+        elif unit1 == "KB" and unit2 == "Byte": 
+            answer = num1 * 1000
+        elif unit1 == "KB" and unit2 == "MB": 
+            answer = num1 / 1000
+        elif unit1 == "KB" and unit2 == "GB": 
+            answer = num1 / 1000000
+        elif unit1 == "KB" and unit2 == "TB": 
+            answer = num1 / 1000000000
+        elif unit1 == "MB" and unit2 == "bit": 
+            answer = num1 * 8000000
+        elif unit1 == "MB" and unit2 == "Byte": 
+            answer = num1 * 1000000
+        elif unit1 == "MB" and unit2 == "KB": 
+            answer = num1 * 1000
+        elif unit1 == "MB" and unit2 == "GB": 
+            answer = num1 / 1000
+        elif unit1 == "MB" and unit2 == "TB": 
+            answer = num1 * 1000000
+        elif unit1 == "GB" and unit2 == "bit": 
+            answer = num1 * 8000000000
+        elif unit1 == "GB" and unit2 == "Byte": 
+            answer = num1 * 1000000000
+        elif unit1 == "GB" and unit2 == "KB": 
+            answer = num1 * 1000000
+        elif unit1 == "GB" and unit2 == "MB": 
+            answer = num1 * 1000
+        elif unit1 == "GB" and unit2 == "TB": 
+            answer = num1 / 1000
+        elif unit1 == "TB" and unit2 == "bit": 
+            answer = num1 * 8000000000000
+        elif unit1 == "TB" and unit2 == "Byte": 
+            answer = num1 * 1000000000000
+        elif unit1 == "TB" and unit2 == "KB": 
+            answer = num1 * 1000000000
+        elif unit1 == "TB" and unit2 == "MB": 
+            answer = num1 * 1000000
+        elif unit1 == "TB" and unit2 == "GB": 
+            answer = num1 * 1000
+        elif unit1 == unit2: 
+            answer = num1
+
     # send back to js
     return jsonify({ 'result': answer })
 

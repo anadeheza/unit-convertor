@@ -1,6 +1,8 @@
 const unitOptions = {
     l: ["mm", "cm", "m", "km"],
-    w: ["mg", "cg", "g", "kg"]
+    w: ["mg", "cg", "g", "kg"],
+    ds: ["bit", "Byte", "KB", "MB", "GB", "TB"]
+
 }
 
 function updateUnits() {
